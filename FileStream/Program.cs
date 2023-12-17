@@ -36,7 +36,7 @@ namespace FileStreamSpace
             //    // DOING
             //}// Dispose()
 
-            using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+            using (FileStream fs = new FileStream(filePath, FileMode.Create))
             {
                 // отримуємо дані для запису в файл
                 Console.WriteLine("Enter the data to write to the file: ");

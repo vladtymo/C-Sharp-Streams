@@ -14,12 +14,12 @@ namespace BinaryWriterDemo
             BinaryWriter writer = new BinaryWriter(file);
 
             long number = 100;
-            var bytes = new byte[] { 10, 20, 50, 100 };
-            string s = "hunger";
+            byte[] bytes = new byte[] { 10, 20, 50, 100 };
+            string str = "hunger";
 
             writer.Write(number);
             writer.Write(bytes);
-            writer.Write(s);
+            writer.Write(str);
 
             writer.Close();
 
